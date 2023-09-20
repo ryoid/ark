@@ -14,8 +14,8 @@ export default defineConfig({
       entryRoot: 'src',
       staticImport: true,
     }),
-    // solid({ solid: { generate: 'ssr', hydratable: true } }),
-    solid(),
+    solid({ solid: { generate: 'ssr', hydratable: true } }),
+    // solid(),
   ],
   build: {
     target: 'esnext',
